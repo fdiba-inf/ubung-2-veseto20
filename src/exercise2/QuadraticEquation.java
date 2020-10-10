@@ -8,3 +8,8 @@ public class QuadraticEquation {
     int a = input.nextInt();
     int b = input.nextInt();
     int c = input.nextInt();
+    if (a!=0){
+
+    }
+  }
+}  
