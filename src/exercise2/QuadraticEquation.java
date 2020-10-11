@@ -12,9 +12,8 @@ public class QuadraticEquation {
     double c = input.nextInt();
     System.out.println("c = " + c);
 
-    double D = Math.pow (b,2)-4*a*c;
-
-    if (a!=0){
+     if (a!=0){
+      double D = Math.pow (b,2)-4*a*c;
       System.out.println("D = " + D);
     }
 
@@ -25,17 +24,19 @@ public class QuadraticEquation {
        double x2=-b-Math.sqrt(D)/2*a;
        System.out.println("x2 =" + x2);
 
-    } else if (D<0) {
+    } else {
       System.out.println("Imaginary values");
     }
+  }
     else if (b!=0){
-      double x=-c/b;
+      double x=(-c)/b;
       System.out.println("x =" + x);
     }
-    else if (b==0&&c!=0) {
+    else if (c!=0) {
       System.out.println("No values");
     }
-     else if (b==0&&c==0) {
+     else (c==0) {
        System.out.println("Many values");
      }
-}  
+}
+}
