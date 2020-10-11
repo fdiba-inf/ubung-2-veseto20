@@ -27,9 +27,13 @@ public class QuadraticEquation {
       System.out.println("Imaginary values");
     }
     else if (b!=0){
-      x= -c/a*x+b;
+      x=-b+Math.sqrt(D)/2*a;
       System.out.println("Berechnung:" + x);
     }
-    
-  
+    else if (c!=0) {
+      System.out.println("No values");
+    }
+     else if {
+       System.out.println("Many values");
+     }
 }  
