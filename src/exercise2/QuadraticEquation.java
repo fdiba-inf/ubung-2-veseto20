@@ -33,10 +33,10 @@ public class QuadraticEquation {
       double x=(-c)/b;
       System.out.println("x =" + x);
     }
-    else if (b==0 & c!=0) {
+    else if (c!=0) {
       System.out.println("No values");
     }
-     else (b==0 & c==0) {
+     else {
        System.out.println("Many values");
      }
 }
