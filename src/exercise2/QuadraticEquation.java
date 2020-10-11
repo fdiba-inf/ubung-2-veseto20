@@ -6,11 +6,12 @@ public class QuadraticEquation {
   public static void main(String[] args) {
     Scanner input = new Scanner (System.in);
     double a = input.nextInt();
+    System.out.println("a = " + a)
     double b = input.nextInt();
+    System.out.println("b = " + b);
     double c = input.nextInt();
-    double x1;
-    double x2;
-    double x;
+    System.out.println("c = " + c);
+
     double D = Math.pow (b,2)-4*a*c;
 
     if (a!=0){
@@ -19,21 +20,22 @@ public class QuadraticEquation {
 
     if (D>=0){
 
-       x1=-b+Math.sqrt(D)/2*a;
-       x2=-b-Math.sqrt(D)/2*a;
+       double x1=-b+Math.sqrt(D)/2*a;
        System.out.println("x1 =" + x1);
+       double x2=-b-Math.sqrt(D)/2*a;
        System.out.println("x2 =" + x2);
+       
     } else if (D<0) {
       System.out.println("Imaginary values");
     }
     else if (b!=0){
-      x=-b+Math.sqrt(D)/2*a;
-      System.out.println("Berechnung:" + x);
+      double x=-c/b;
+      System.out.println("x =" + x);
     }
-    else if (c!=0) {
+    else if (b==0 || c!=0) {
       System.out.println("No values");
     }
-     else if {
+     else if (b==0 || c==0) {
        System.out.println("Many values");
      }
 }  
