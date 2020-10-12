@@ -29,11 +29,11 @@ public class QuadraticEquation {
     }
 
   }
-    else if (b!=0){
+    else if (b!=0 & a==0){
       double x=(-c)/b;
       System.out.println("x =" + x);
     }
-    else if (c!=0) {
+    else if (b==0 & c!=0) {
       System.out.println("No values");
     }
      else {
