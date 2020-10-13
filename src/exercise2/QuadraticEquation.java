@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class QuadraticEquation {
   public static void main(String[] args) {
     Scanner input = new Scanner (System.in);
-    double a = input.nextInt();
+    double a = input.nextDouble();
     System.out.println("Enter a value for a" + a);
-    double b = input.nextInt();
+    double b = input.nextDouble();
     System.out.println("Enter a value for b = " + b);
-    double c = input.nextInt();
+    double c = input.nextDouble();
     System.out.println("Enter a value for c = " + c);
 
      if (a!=0){
@@ -20,20 +20,17 @@ public class QuadraticEquation {
     if (D>=0){
 
        double x1=(-b+Math.sqrt(D))/(2*a);
-       System.out.println("x1 =" + x1);
+       
        double x2=(-b-Math.sqrt(D))/(2*a);
-       System.out.println("x2 =" + x2);
+       System.out.println(x1 + ", " + x2);
   } 
     else {
       System.out.println("Imaginary values");
-    }
-
-  }
-    else if (b!=0){
+    } else if (b!=0){
       double x=(-c)/b;
       System.out.println("x =" + x);
     }
-    else if (b==0 & c!=0) {
+    else if (c!=0) {
       System.out.println("No values");
     }
      else {
